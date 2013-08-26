@@ -288,6 +288,7 @@ Public Class Crear_Inclusion
                 MsgBox("Error en el ingreso de los datos de diseño", MsgBoxStyle.Information, "Error")
 
             End Try
+            sqlConnection1.Close()
 
             Dim nombre_diseno As String = TextBox2.Text
             Dim id_diseno As String = ""

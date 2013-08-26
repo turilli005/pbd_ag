@@ -262,7 +262,13 @@ Public Class Crear_pedido
 
                     'INSERTAR EN REPORTE_PRODUCCION POR CADA INCLUSION
                     ' ID_REPORTE_PRODUCCION ID_OS ID_DISENO INFORMACION_PRODUCCION PORCENTAJE_AVANCE
+                    If Modulo.cargoUser = 0 Then
+                        Inicio_Administrador.Show()
 
+                    Else
+                        Inicio_Vendedor.Show()
+
+                    End If
 
                 Else
                     MsgBox("No se ingresaron las inclusiones", MsgBoxStyle.Information, "Error")
