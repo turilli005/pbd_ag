@@ -51,6 +51,7 @@ Public Class Ver_Auditoria
         col3.Width = 120
         col5.Width = 400
         col6.Width = 130
+        col4.Width = 120
 
         ListView1.Columns.Add(col1)
         ListView1.Columns.Add(col2)

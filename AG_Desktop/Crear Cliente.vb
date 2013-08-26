@@ -134,7 +134,7 @@ Public Class Crear_Cliente
                         cmd.CommandText = "INSERT INTO USUARIO(username,password,nombre, mail, fono,cargo) VALUES ('" & CType(rut, Integer) & "','" & pass & "','" & nombre & "','" & mail & "','" & fono & "','" & 3 & "')"
 
                         Try
-                            MsgBox(cmd.CommandText)
+                            ' MsgBox(cmd.CommandText)
                             cmd.ExecuteNonQuery()
                         Catch ex As Exception
                         End Try
